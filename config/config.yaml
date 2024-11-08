@@ -1,0 +1,60 @@
+# TermHound Configuration
+
+# Neo4j Connection Settings
+neo4j:
+  default_uri: "neo4j://localhost:7687"
+  timeout: 30
+  connection_pool_size: 50
+
+# Analysis Settings
+analysis:
+  max_path_length: 10
+  include_disabled_accounts: false
+  high_risk_keywords:
+    - "admin"
+    - "service"
+    - "privileged"
+    - "backup"
+    - "sql"
+    - "exchange"
+
+# Report Settings
+reporting:
+  terminal:
+    color_enabled: true
+    detail_level: "full"  # basic, standard, full
+    show_timestamps: true
+  
+  json:
+    indent: 2
+    include_metadata: true
+    compress: false
+
+# Logging Settings
+logging:
+  level: "INFO"
+  file_rotation: 5
+  max_file_size: 10485760  # 10MB
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+# Query Categories
+queries:
+  certificate:
+    enabled: true
+    include_expired: false
+    max_template_age: 365  # days
+  
+  kerberos:
+    enabled: true
+    spn_analysis: true
+    delegation_analysis: true
+    
+  domain:
+    enabled: true
+    analyze_trusts: true
+    include_gpos: true
+    
+  privilege:
+    enabled: true
+    include_nested: true
+    max_group_depth: 5

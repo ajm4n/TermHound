@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: termhound
+Version: 1.0.0
+Summary: Active Directory Security Analysis Tool
+Home-page: https://github.com/yourusername/termhound
+Author: AJ Hammond
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: neo4j>=5.14.1
+Requires-Dist: colorama>=0.4.6
+Requires-Dist: pandas>=2.1.3
+Requires-Dist: rich>=13.7.0
+Requires-Dist: typing-extensions>=4.8.0
+Requires-Dist: python-dateutil>=2.8.2
+
+# TermHound
+
+A comprehensive Active Directory security analysis tool that integrates with Neo4j to detect vulnerabilities, analyze attack paths, and identify security misconfigurations.
+
+## Features
+
+- Certificate template vulnerability analysis (ESC1-ESC15)
+- Kerberos security assessment
+- Domain privilege escalation paths
+- Attack path analysis from owned users
+- Comprehensive security reporting
+- Color-coded terminal output
+- Detailed JSON reports
+
+## Installation
+
+1. Clone the repository
+2. Install requirements:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Usage
+
+Basic usage:
+```bash
+python -m termhound --uri "neo4j://localhost:7687" \
+    --username neo4j \
+    --password your_password \
+    --output report.json
+```
+
+With owned users:
+```bash
+python -m termhound  --uri "neo4j://localhost:7687" \
+    --username neo4j \
+    --password your_password \
+    --output report.json \
+    --owned "user1@domain.com" "user2@domain.com"
+```
+
+## Project Structure
+
+```
+termhound/
+├── __init__.py
+├── requirements.txt
+├── README.md
+└── src/
+    ├── __init__.py
+    ├── analyzer.py
+    ├── reporters.py
+    └── queries/
+        ├── __init__.py
+        ├── certificate_queries.py
+        ├── domain_queries.py
+        ├── kerberos_queries.py
+        └── privilege_queries.py
+```
+
+## Requirements
+
+- Python 3.8+
+- Neo4j 4.4+
+- BloodHound data imported into Neo4j
