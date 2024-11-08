@@ -1,0 +1,768 @@
+{
+  "timestamp": "2024-11-08T16:21:34.160394",
+  "metadata": {
+    "source": "bloodhound",
+    "owned_users": null,
+    "analysis_date": "2024-11-08T16:21:34.160398",
+    "file": "/Users/ajhammond/Downloads/ad_example_data.zip"
+  },
+  "domain_security": {
+    "info": {
+      "computers": 33,
+      "users": 100,
+      "groups": 285,
+      "domains": 3,
+      "relationships": 0,
+      "certificate_templates": 106,
+      "enterprise_cas": 4
+    },
+    "vulnerabilities": [
+      {
+        "issue": "Computers without LAPS",
+        "severity": "HIGH",
+        "count": 32,
+        "affected": [
+          "JONAS-TEST-MS01.PHANTOM.CORP",
+          "ALICE-LAPTOP.PHANTOM.CORP",
+          "SRV-SHARPHOUND.PHANTOM.CORP",
+          "PC.PHANTOM.CORP",
+          "123456789.PHANTOM.CORP",
+          "ADMINISTRATOR",
+          "SRV-COMPROMISED.PHANTOM.CORP",
+          "SERVER01.PHANTOM.CORP",
+          "ABCDEFGHIJKLMNO.PHANTOM.CORP",
+          "SERVER02.PHANTOM.CORP",
+          "FILESERVER01.PHANTOM.CORP",
+          "ADMINSERVER01.PHANTOM.CORP",
+          "KRB-DEL-01.PHANTOM.CORP",
+          "RODC01.PHANTOM.CORP",
+          "AM-WIN10-DEV02.PHANTOM.CORP",
+          "DC02.PHANTOM.CORP",
+          "SRV-TARGET.PHANTOM.CORP",
+          "DC01.PHANTOM.CORP",
+          "DF-MS-SHS.PHANTOM.CORP",
+          "DF-WIN10-DEV01.PHANTOM.CORP",
+          "PAYMENT01.PHANTOM.CORP",
+          "GHOST-DC01.GHOST.CORP",
+          "EXTRODC01.WRAITH.CORP",
+          "EXTSRV01.WRAITH.CORP",
+          "EXTCA02.WRAITH.CORP",
+          "TARGETCOMPUTERC.WRAITH.CORP",
+          "VICTIMCOMPUTERA.WRAITH.CORP",
+          "TEST.WRAITH.CORP",
+          "EXTDC01.WRAITH.CORP",
+          "EXTCA01.WRAITH.CORP",
+          "TARGETUSERD2",
+          "EXTEXCH01.WRAITH.CORP"
+        ]
+      },
+      {
+        "issue": "Users with Password Not Required",
+        "severity": "HIGH",
+        "count": 6,
+        "affected": [
+          "DA-NOPW2@PHANTOM.CORP",
+          "GUEST@PHANTOM.CORP",
+          "DA-NOPW@PHANTOM.CORP",
+          "GUEST@GHOST.CORP",
+          "GUEST@WRAITH.CORP",
+          "$N31000-BBHT9IVGI4SP@WRAITH.CORP"
+        ]
+      }
+    ],
+    "critical_assets": {
+      "domain_controllers": [],
+      "high_value_targets": []
+    },
+    "privileged_accounts": {
+      "domain_admins": [],
+      "enterprise_admins": [],
+      "administrators": []
+    }
+  },
+  "certificate_security": {
+    "templates": [
+      {
+        "name": "SMARTCARDLOGON@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "SMARTCARDUSER@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "ENROLLMENTAGENTOFFLINE@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "ENROLLMENTAGENT@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "MACHINEENROLLMENTAGENT@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "CTLSIGNING@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "MACHINE@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "CLIENTAUTH@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "WEBSERVER@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "CA@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "DOMAINCONTROLLER@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "IPSECINTERMEDIATEONLINE@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "SUBCA@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "OFFLINEROUTER@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "IPSECINTERMEDIATEOFFLINE@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "CEPENCRYPTION@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "EXCHANGEUSERSIGNATURE@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "EXCHANGEUSER@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "CAEXCHANGE@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "CROSSCA@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "KEYRECOVERYAGENT@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "RASANDIASSERVER@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "DIRECTORYEMAILREPLICATION@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "WORKSTATION@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "DOMAINCONTROLLERAUTHENTICATION@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "KERBEROSAUTHENTICATION@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "TESTV4@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "TESTV2@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "TESTV3@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "AUTHENTICATION MECHANISM MEDIUM LEVEL ACCESS@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "ESC9@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "ESC1@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "ESC3-SELF@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "ESC1SMARTCARD@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "CODESIGNING@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "ESC3V2@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "ADMINISTRATOR@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "SPICYTEMP@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "SPICYTEMP(COPY)@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "SPICYTEMPNAME@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "OPERATIONSMANAGER@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "SPICYTEMP(COPY))@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "CLIENTAUTH2@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "ESC3-SELF2@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "COPYOFOCSPRESPONSESIGNING(LEGACY)@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "USERSIGNATURE@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "ESC10@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "ENROLLMENTAGENTV2@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "ADMINISTRATORCOPY@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "CLIENTAUTHV1@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "ENROLLMENTAGENTCOPY@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "CLIENTAUTH3@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "ESC6A@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "MYTEMPLATE@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "ABUSABLETEMPLATE@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "ESC14@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "USER@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "COPY OF OCSP RESPONSE SIGNING@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "OCSPRESPONSESIGNING@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "ESC13TEMPLATE@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "EFS@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "EFSRECOVERY@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "ESC12TEMPLATE@PHANTOM.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "ENROLLMENTAGENT@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "MACHINEENROLLMENTAGENT@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "CODESIGNING@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "MACHINE@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "KEYRECOVERYAGENT@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "DOMAINCONTROLLERAUTHENTICATION@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "WORKSTATION@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "RASANDIASSERVER@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "USER@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "USEREMAIL@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "KERBEROSAUTHENTICATION@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "EFS@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "CEPENCRYPTION@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "USERSIGNATURE@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "CROSSCA@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "ADMINISTRATOR@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "ENROLLMENTAGENTOFFLINE@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "USERNOEMAILNOSEC@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "USERNOSANFLAGS@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "USERV2@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "MYTEMPLATE@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "EXTMAIL@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "USERNOUPN@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "MACHINENOSEC@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "CTLSIGNING@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "EXCHANGEUSER@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "OFFLINEROUTER@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "SUBCA@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "IPSECINTERMEDIATEONLINE@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "WEBSERVER@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "CA@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "DOMAINCONTROLLER@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "USEREMAILNOSEC@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "EXCHANGEUSERSIGNATURE@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "CAEXCHANGE@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "SMARTCARDLOGON@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "DIRECTORYEMAILREPLICATION@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "SMARTCARDUSER@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "CLIENTAUTH@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "OCSPRESPONSESIGNING@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "IPSECINTERMEDIATEOFFLINE@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "EFSRECOVERY@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      },
+      {
+        "name": "COMPUTERV2@WRAITH.CORP",
+        "vulnerabilities": [
+          "ESC2"
+        ]
+      }
+    ],
+    "authorities": []
+  },
+  "kerberos_security": {
+    "as_rep": [
+      "NOPREAUTH@PHANTOM.CORP"
+    ],
+    "spn": [
+      "KRBTGT@PHANTOM.CORP",
+      "ADMINISTRATOR@PHANTOM.CORP",
+      "SVC_KERB_DEL@PHANTOM.CORP",
+      "KRBTGT@GHOST.CORP",
+      "KRBTGT@WRAITH.CORP"
+    ],
+    "delegations": [],
+    "high_risk": [
+      {
+        "name": "KRBTGT@PHANTOM.CORP",
+        "type": "Kerberoastable"
+      },
+      {
+        "name": "ADMINISTRATOR@PHANTOM.CORP",
+        "type": "Kerberoastable"
+      },
+      {
+        "name": "SVC_KERB_DEL@PHANTOM.CORP",
+        "type": "Kerberoastable"
+      },
+      {
+        "name": "NOPREAUTH@PHANTOM.CORP",
+        "type": "AS-REP Roasting"
+      },
+      {
+        "name": "KRBTGT@GHOST.CORP",
+        "type": "Kerberoastable"
+      },
+      {
+        "name": "KRBTGT@WRAITH.CORP",
+        "type": "Kerberoastable"
+      }
+    ]
+  },
+  "attack_paths": {
+    "domain_admin": [],
+    "high_value": [],
+    "owned_paths": []
+  }
+}

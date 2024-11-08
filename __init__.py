@@ -1,4 +1,4 @@
-"""TermHound - Active Directory Security Analysis Tool"""
+"""TermHound - AD Security Analysis Tool"""
 from termhound.analyzer import TermHoundAnalyzer
 from termhound.cli import main
 

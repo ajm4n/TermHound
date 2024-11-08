@@ -1,6 +1,6 @@
-"""Core source modules for TermHound."""
-
+"""TermHound - AD Security Analysis Tool"""
 from .analyzer import TermHoundAnalyzer
-from .reporters import TerminalReporter, JSONReporter
+from .cli import main
 
-__all__ = ["TermHoundAnalyzer", "TerminalReporter", "JSONReporter"]
+__version__ = "1.0.0"
+__all__ = ['TermHoundAnalyzer', 'main']

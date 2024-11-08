@@ -2,8 +2,7 @@ Metadata-Version: 2.1
 Name: termhound
 Version: 1.0.0
 Summary: Active Directory Security Analysis Tool
-Home-page: https://github.com/yourusername/termhound
-Author: AJ Hammond
+Author: Security Researcher
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent

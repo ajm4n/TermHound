@@ -6,11 +6,10 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
     name="termhound",
     version="1.0.0",
-    author="AJ Hammond",
+    author="Security Researcher",
     description="Active Directory Security Analysis Tool",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/termhound",
     packages=find_packages(),
     include_package_data=True,
     install_requires=[

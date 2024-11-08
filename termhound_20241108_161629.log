@@ -1,0 +1,43 @@
+2024-11-08 16:16:29,031 - TermHound - INFO - Initialized TermHound with bloodhound source
+2024-11-08 16:16:29,031 - TermHound - INFO - Starting analysis using bloodhound source
+2024-11-08 16:16:29,031 - TermHound - INFO - Starting BloodHound analysis from /Users/ajhammond/Downloads/ad_example_data.zip
+2024-11-08 16:16:29,031 - TermHound - INFO - Parsing BloodHound data
+2024-11-08 16:16:29,031 - TermHound.Parser - INFO - Processing BloodHound zip file: /Users/ajhammond/Downloads/ad_example_data.zip
+2024-11-08 16:16:29,031 - TermHound.Parser - INFO - Found 31 JSON files in zip
+2024-11-08 16:16:29,031 - TermHound.Parser - INFO - Processing 20240305110018_aiacas.json
+2024-11-08 16:16:29,032 - TermHound.Parser - INFO - Processing 20240305110018_certtemplates.json
+2024-11-08 16:16:29,032 - TermHound.Parser - INFO - Processing 20240305110018_computers.json
+2024-11-08 16:16:29,033 - TermHound.Parser - INFO - Processing 20240305110018_containers.json
+2024-11-08 16:16:29,035 - TermHound.Parser - INFO - Processing 20240305110018_domains.json
+2024-11-08 16:16:29,035 - TermHound.Parser - INFO - Processing 20240305110018_enterprisecas.json
+2024-11-08 16:16:29,035 - TermHound.Parser - INFO - Processing 20240305110018_gpos.json
+2024-11-08 16:16:29,035 - TermHound.Parser - INFO - Processing 20240305110018_groups.json
+2024-11-08 16:16:29,036 - TermHound.Parser - INFO - Processing 20240305110018_ntauthstores.json
+2024-11-08 16:16:29,036 - TermHound.Parser - INFO - Processing 20240305110018_ous.json
+2024-11-08 16:16:29,036 - TermHound.Parser - INFO - Processing 20240305110018_rootcas.json
+2024-11-08 16:16:29,036 - TermHound.Parser - INFO - Processing 20240305110018_users.json
+2024-11-08 16:16:29,037 - TermHound.Parser - INFO - Processing 20240305110427_computers.json
+2024-11-08 16:16:29,037 - TermHound.Parser - INFO - Processing 20240305110427_containers.json
+2024-11-08 16:16:29,038 - TermHound.Parser - INFO - Processing 20240305110427_domains.json
+2024-11-08 16:16:29,038 - TermHound.Parser - INFO - Processing 20240305110427_gpos.json
+2024-11-08 16:16:29,038 - TermHound.Parser - INFO - Processing 20240305110427_groups.json
+2024-11-08 16:16:29,038 - TermHound.Parser - INFO - Processing 20240305110427_ous.json
+2024-11-08 16:16:29,038 - TermHound.Parser - INFO - Processing 20240305110427_users.json
+2024-11-08 16:16:29,039 - TermHound.Parser - INFO - Processing 20240305111414_aiacas.json
+2024-11-08 16:16:29,039 - TermHound.Parser - INFO - Processing 20240305111414_certtemplates.json
+2024-11-08 16:16:29,039 - TermHound.Parser - INFO - Processing 20240305111414_computers.json
+2024-11-08 16:16:29,039 - TermHound.Parser - INFO - Processing 20240305111414_containers.json
+2024-11-08 16:16:29,044 - TermHound.Parser - INFO - Processing 20240305111414_domains.json
+2024-11-08 16:16:29,044 - TermHound.Parser - INFO - Processing 20240305111414_enterprisecas.json
+2024-11-08 16:16:29,044 - TermHound.Parser - INFO - Processing 20240305111414_gpos.json
+2024-11-08 16:16:29,044 - TermHound.Parser - INFO - Processing 20240305111414_groups.json
+2024-11-08 16:16:29,045 - TermHound.Parser - INFO - Processing 20240305111414_ntauthstores.json
+2024-11-08 16:16:29,045 - TermHound.Parser - INFO - Processing 20240305111414_ous.json
+2024-11-08 16:16:29,045 - TermHound.Parser - INFO - Processing 20240305111414_rootcas.json
+2024-11-08 16:16:29,045 - TermHound.Parser - INFO - Processing 20240305111414_users.json
+2024-11-08 16:16:29,046 - TermHound - INFO - Found 0 domain controllers and 0 high-value targets
+2024-11-08 16:16:29,046 - TermHound - INFO - Found 6 Kerberos-related risks
+2024-11-08 16:16:29,046 - TermHound - INFO - Found 0 paths to Domain Admin
+2024-11-08 16:16:29,047 - TermHound - INFO - Found 0 paths from owned users
+2024-11-08 16:16:29,047 - TermHound - INFO - BloodHound analysis completed successfully
+2024-11-08 16:16:29,047 - TermHound - ERROR - Analysis failed: 'TerminalReporter' object has no attribute '_report_attack_paths'

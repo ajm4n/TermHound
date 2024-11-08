@@ -11,6 +11,8 @@ termhound.egg-info/dependency_links.txt
 termhound.egg-info/entry_points.txt
 termhound.egg-info/requires.txt
 termhound.egg-info/top_level.txt
+termhound/parsers/__init__.py
+termhound/parsers/bloodhound_parser.py
 termhound/queries/__init__.py
 termhound/queries/certificate_queries.py
 termhound/queries/domain_queries.py
