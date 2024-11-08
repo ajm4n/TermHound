@@ -11,7 +11,7 @@ A comprehensive Active Directory security analysis tool that integrates with Neo
 - Comprehensive security reporting
 - Color-coded terminal output
 - Detailed JSON reports
-
+- Supports .zip files with BloodHound ingestion data
 ## Installation
 
 1. Clone the repository
